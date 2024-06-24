@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doce da Mi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .container {
+            padding: 2rem;
+        }
+        .title {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #ff69b4; /* Cor rosa */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+        }
+        .item {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .item h3, .item p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong class="title">Doce da Mi</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#" role="button">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section class="item">
+                <h3>Cupcake</h3>
+                <div style="background-color: #f0f0f0; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <span>Imagem de Cupcake</span>
+                </div>
+                <p>R$ 5,00</p>
+            </section>
+            <section class="item">
+                <h3>Cookies</h3>
+                <div style="background-color: #f0f0f0; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <span>Imagem de Cookies</span>
+                </div>
+                <p>R$ 3,50</p>
+            </section>
+            <section class="item">
+                <h3>Pastel</h3>
+                <div style="background-color: #f0f0f0; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <span>Imagem de Pastel</span>
+                </div>
+                <p>R$ 4,00</p>
+            </section>
+            <section class="item">
+                <h3>Sanduíche</h3>
+                <div style="background-color: #f0f0f0; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <span>Imagem de Sanduíche</span>
+                </div>
+                <p>R$ 6,00</p>
+            </section>
+            <section class="item">
+                <h3>Mini Pizza</h3>
+                <div style="background-color: #f0f0f0; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <span>Imagem de Mini Pizza</span>
+                </div>
+                <p>R$ 8,00</p>
+            </section>
+            <section class="item">
+                <h3>Brigadeiro</h3>
+                <div style="background-color: #f0f0f0; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <span>Imagem de Brigadeiro</span>
+                </div>
+                <p>R$ 1,50</p>
+            </section>
+        </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Assine Nossa Newsletter</h2>
+                    <h3>Receba as novidades e promoções por email</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Seu nome" aria-label="Seu nome" required />
+                    <input type="email" id="email" name="email" placeholder="Seu email" aria-label="Seu email" required />
+                    <button type="submit" onclick="event.preventDefault()">Inscrever-se</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small><a href="#">Política de Privacidade</a> • <a href="#">Termos de Uso</a></small>
+    </footer>
+</body>
+</html>
